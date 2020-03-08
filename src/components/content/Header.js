@@ -5,6 +5,7 @@ import {connect} from 'react-redux'
 class HeaderContent extends React.Component{
 
 	componentDidMount(){
+		if(this.props.bucketId)
 		this.props.fetchBucket(this.props.bucketId)
 	}
 
