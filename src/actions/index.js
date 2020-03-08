@@ -22,7 +22,7 @@ export const createBucket=Value=>async (dispatch)=>{
 }
 
 export const fetchBuckets=()=>async dispatch=>{
-	const response=await todo.get('/')
+	const response=await todo.get('/buckets')
 	dispatch({type:FETCH_BUCKETS,payload:response.data})
 }
 
