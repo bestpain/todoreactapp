@@ -5,12 +5,13 @@ import {connect} from 'react-redux'
 class HeaderContent extends React.Component{
 
 	componentDidMount(){
-		if(this.props.bucketId)
-		this.props.fetchBucket(this.props.bucketId)
+		//if(this.props.bucketId)
+		//this.props.fetchBucket(this.props.bucketId)
 	}
 
 	render(){	
-		if(!this.props.bucketName || this.props.bucketId==undefined)
+		//if(!this.props.bucketName || this.props.bucketId==undefined)
+		if(!this.props.bucketName)
 			return <div style={{color:"white",fontSize:"large"}}>Select a bucket to add or view todos</div>;
 		return(
 			<div style={{color:"white",fontSize:"large"}}>{this.props.bucketName.category}</div>	
